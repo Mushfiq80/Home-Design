@@ -13,10 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
-        .manrope-font{
+        .manrope-font {
             font-family: "Manrope", sans-serif;
         }
     </style>
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/e81ca27c24.js" crossorigin="anonymous"></script>
     <!-- tailwind config  -->
     <script>
         tailwind.config = {
@@ -24,15 +26,61 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        'primary-bg': '#ABEF5F',
+                        'light-primary': '#ABEF5F80'
                     }
                 }
             }
         }
     </script>
+
 </head>
 
-<body class="manrope-font">
-    <h1>Rinterio Home design</h1>
+<body class="manrope-font md:container mx-auto">
+    <header>
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl"><i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-2xl p-0.5"></i>Rinterio</a>
+                </div>
+                <div class="navbar-center hidden  lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-3 hidden md:flex">
+                    <div><i class="fa-solid fa-magnifying-glass bg-gray-100 p-1 rounded-lg"></i></div>
+                    <div><i class="fa-solid fa-cart-shopping bg-gray-100 p-1 rounded-lg"></i></i></div>
+                    <a class="btn bg-primary-bg ">Book Consult <i
+                            class="fa-solid fa-arrow-right -rotate-45 bg-slate-800 text-white rounded-2xl p-0.5"></i></a>
+                </div>
+                <div class="lg:hidden ml-2 navbar-end"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+        <section class="flex flex-col items-center justify-center">
+            <div>
+                <img class="w-2/3 mx-auto" src="/assets/banner.png" alt="">
+            </div>
+            <div class="md:w-3/4 text-center space-y-4 md:space-y-6">
+                <h1 class="text-4xl font-bold lg:text-6xl">A barn house of this design has a striking appearance
+                </h1>
+                <p class="text-slate-600">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
+                    space with natural light.</p>
+                <button class="bg-light-primary text-xs p-3 rounded-3xl">View Details <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-2xl p-0.5"></i></button>
+            </div>
+        </section>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
 </body>
 
 </html>

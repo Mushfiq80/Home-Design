@@ -27,7 +27,8 @@
                     colors: {
                         clifford: '#da373d',
                         'primary-bg': '#ABEF5F',
-                        'light-primary': '#ABEF5F80'
+                        'light-primary': '#ABEF5F80',
+                        'hero-bg': "url('/assets/bg.jpg')"
                     }
                 }
             }
@@ -72,7 +73,8 @@
                 <p class="text-slate-600">The barn house captivates with its blend of rustic charm and modern
                     sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
                     space with natural light.</p>
-                <button class="bg-light-primary text-xs p-3 rounded-3xl">View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></button>
+                <button class="bg-light-primary text-xs p-3 rounded-3xl">View Details <i
+                        class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></button>
             </div>
         </section>
     </header>
@@ -80,7 +82,7 @@
     <main class="bg-neutral-200">
         <!-- We design section  -->
         <section
-            class="flex flex-col md:flex-row md:container justify-between items-center mx-auto gap-9 max-w-96 mt-24 py-24 lg:px-6">
+            class="flex flex-col md:flex-row md:container justify-between items-center mx-auto gap-9 max-w-96 mt-24 py-24 lg:px-32">
             <div class="space-y-5 w-1/2">
                 <div>
                     <button class="btn btn-sm bg-white p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>About
@@ -113,7 +115,7 @@
             </div>
         </section>
         <!-- Stats  -->
-        <section class="hidden md:flex md:container mx-auto pb-24 lg:px-6">
+        <section class="hidden md:flex md:container mx-auto pb-24 lg:px-32">
             <div class="stats shadow w-full mx-auto">
                 <div class="stat place-items-center">
                     <div class="stat-value">235+</div>
@@ -136,7 +138,7 @@
             </div>
         </section>
         <!-- Works Process   -->
-        <section class="md:container mx-auto lg:px-6 text-center space-y-6 pb-24">
+        <section class="md:container mx-auto lg:px-32 text-center space-y-6 pb-24">
             <div class="space-y-6">
                 <button class="btn btn-sm bg-white p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>How we
                     works</button>
@@ -188,69 +190,164 @@
 
             </div>
         </section>
-        <!-- Latest Portfolio  -->
-        <section class="md:container py-24 lg:px-32">
-            <div class="text-center space-y-6 pb-24">
-                <button class="btn btn-sm bg-lime-200 p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Explore
-                    Our Latest Work</button>
+    </main>
+    <!-- Latest Portfolio  -->
+    <section class="md:container mx-auto py-24 lg:px-32">
+        <div class="text-center space-y-6 pb-24">
+            <button class="btn btn-sm bg-lime-200 p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Explore
+                Our Latest Work</button>
+            <h1>Our Latest Portfolio</h1>
+            <p class="w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and modern
+                sophistication, featuring weathered wood, sleek metal accents.</p>
+        </div>
+        <div class="grid lg:grid-cols-4 gap-6 flex-col">
+            <!-- card 1 row-1 col-span-3 -->
+            <div
+                class="card card-side flex-col md:flex-row bg-base-100 shadow-xl p-4 border-slate-300 md:col-span-3 order-1">
+                <figure>
+                    <img src="assets/img1.png" alt="Card 1 Image" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Commercial</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern design.</p>
+                    <div class="card-actions justify-start">
+                        <a>View Details <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- card 2 row-1 col-span-1 -->
+            <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 order-2">
+                <figure>
+                    <img src="assets/img2.png" alt="Card 2 Image" />
+                </figure>
+            </div>
+
+            <!-- card 5 row-2 col-span-1 -->
+            <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 order-3 lg:order-5">
+                <figure>
+                    <img src="assets/img1.png" alt="Card 5 Image" />
+                </figure>
+            </div>
+
+            <!-- card 3 row-2 col-span-1 -->
+            <div
+                class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 flex justify-center order-4 lg:order-3">
+                <figure>
+                    <img class="w-full" src="assets/img3.png" alt="Card 3 Image" />
+                </figure>
+            </div>
+
+            <!-- card 4 row-2 col-span-2 -->
+            <div
+                class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 flex-col md:flex-row md:col-span-2 order-5 lg:order-4">
+                <figure>
+                    <img src="assets/img4.png" alt="Card 4 Image" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">Commercial</h2>
+                    <p>The barn house captivates with its blend of rustic charm and modern design.</p>
+                    <div class="card-actions justify-start">
+                        <a>View Details <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="bg-neutral-200 py-24 lg:px-32">
+        <!-- Read Our Article section  -->
+        <section class="">
+            <div class="text-center space-y-6 pb-12">
+                <button class="btn btn-sm bg-lime-200 p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Rinterio
+                    News</button>
+                <h1>Read Our Articles and News</h1>
+                <p class="w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and modern
+                    sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- 3 card part  -->
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <!-- card 1  -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img class="p-6 pb-4" src="/assets/article1.png" alt="Shoes" />
+                    </figure>
+                    <div class="pl-7 space-x-3">
+                        <span><i class="fa-regular fa-calendar-days"></i> July14, 2024</span>
+                        <span><i class="fa-regular fa-circle-user"></i> By Admin</span>
+                    </div>
+                    <div class="card-body -mt-6">
+                        <h2 class="card-title">How to Chose the furniture right of your home</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <a class="font-semibold">Read More <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
+                    </div>
+                </div>
+                <!-- card 2  -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img class="p-6 pb-4" src="/assets/article2.png" alt="Shoes" />
+                    </figure>
+                    <div class="pl-7 space-x-3">
+                        <span><i class="fa-regular fa-calendar-days"></i> July14, 2024</span>
+                        <span><i class="fa-regular fa-circle-user"></i> By Admin</span>
+                    </div>
+                    <div class="card-body -mt-6">
+                        <h2 class="card-title">How to Chose the furniture right of your home</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <a class="font-semibold">Read More <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
+                    </div>
+                </div>
+                <!-- card 3  -->
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure>
+                        <img class="p-6 pb-4" src="/assets/article3.png" alt="Shoes" />
+                    </figure>
+                    <div class="pl-7 space-x-3">
+                        <span><i class="fa-regular fa-calendar-days"></i> July14, 2024</span>
+                        <span><i class="fa-regular fa-circle-user"></i> By Admin</span>
+                    </div>
+                    <div class="card-body -mt-6">
+                        <h2 class="card-title">How to Chose the furniture right of your home</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                        <a class="font-semibold">Read More <i
+                                class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- with bg form part  -->
+    <section class="" style="background-image: url(/assets/bg.jpg)">
+        <div class="md:container mx-auto py-24 lg:px-32">
+            <div class="text-center">
+                <button class="btn btn-sm bg-lime-200 p-2 rounded-3xl"><i class="fa-solid fa-arrow-right"></i>Lets
+                    Connect</button>
                 <h1>Our Latest Portfolio</h1>
                 <p class="w-3/4 mx-auto">The barn house captivates with its blend of rustic charm and modern
                     sophistication, featuring weathered wood, sleek metal accents.</p>
             </div>
-            <div class="grid lg:grid-cols-4 gap-6 flex-col">
-                <!-- card 1 row-1 col-span-3 -->
-                <div class="card card-side flex-col md:flex-row bg-base-100 shadow-xl p-4 border-slate-300 md:col-span-3 order-1">
-                    <figure>
-                        <img src="assets/img1.png" alt="Card 1 Image" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern design.</p>
-                        <div class="card-actions justify-start">
-                            <a>View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- card 2 row-1 col-span-1 -->
-                <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 order-2">
-                    <figure>
-                        <img src="assets/img2.png" alt="Card 2 Image" />
-                    </figure>
-                </div>
-            
-                <!-- card 5 row-2 col-span-1 -->
-                <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 order-3 lg:order-5">
-                    <figure>
-                        <img src="assets/img1.png" alt="Card 5 Image" />
-                    </figure>
-                </div>
-            
-                <!-- card 3 row-2 col-span-1 -->
-                <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 flex justify-center order-4 lg:order-3">
-                    <figure>
-                        <img class="w-full" src="assets/img3.png" alt="Card 3 Image" />
-                    </figure>
-                </div>
-            
-                <!-- card 4 row-2 col-span-2 -->
-                <div class="card card-side bg-base-100 shadow-xl p-4 border-slate-300 flex-col md:flex-row md:col-span-2 order-5 lg:order-4">
-                    <figure>
-                        <img src="assets/img4.png" alt="Card 4 Image" />
-                    </figure>
-                    <div class="card-body">
-                        <h2 class="card-title">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm and modern design.</p>
-                        <div class="card-actions justify-start">
-                            <a>View Details <i class="fa-solid fa-arrow-right -rotate-45 bg-primary-bg rounded-full p-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- form part  -->
+            <form class="pt-6">
+                <div class="grid grid-cols-2 gap-6">
+                    <input type="text" placeholder="Type here" class="input block w-full" />
+                   
+                    <input type="text" placeholder="Type here" class="input block w-full" />
+                    
+                    <input type="text" placeholder="Type here" class="input block w-full" />
+                    
+                    <input type="text" placeholder="Type here" class="input block w-full" />
+    
+                    <textarea placeholder="Bio" class="textarea textarea-lg w-full col-span-2"></textarea>
 
+                    <button type="submit" class="btn bg-primary-bg col-span-2">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 bg-slate-800 text-white rounded-full p-2"></i></button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-        </section>
-    </main>
 
     <footer></footer>
 </body>
